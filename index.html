@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div class="logo-container">
+    <img src="imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+</div>
+<body>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+        	<img src="imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+        	<img src="imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+        	<img src="imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+        	<img src="imagen/rr.png" alt="Icono">NUEVO</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
