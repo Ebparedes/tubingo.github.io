@@ -22,7 +22,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     /* Agregar la textura */
-    background-image: url('imagen/descarga.png'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
+    background-image: url('Imagen/descarga.png'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
     background-blend-mode: multiply;
     background-size: cover;
 }
@@ -140,7 +140,7 @@ h1 {
         1.74541px -2.43999px 0px rgb(23, 5, 87),
         2.44769px -1.73459px 0px rgb(23, 5, 87),
         2.88051px -0.838247px 0px rgb(23, 5, 87);
-     background-image: url('imagen/BAN.jpg'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
+     background-image: url('Imagen/BAN.jpg'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
 
 }
 ::placeholder{
@@ -198,7 +198,7 @@ h1 {
     font-size: 24px;
     margin-bottom: 10px;
     padding: 10px;
-        background-image: url('imagen/BAN.jpg'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
+        background-image: url('Imagen/BAN.jpg'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
     background-blend-mode: multiply;
     background-size: cover;
     border-radius: 10px 10px 10px 10px;
@@ -275,7 +275,7 @@ h2 {
         2.88051px -0.838247px 0px rgb(23, 5, 87);
 /* Animación de flotación */
     animation: floatAnimation 3s ease-in-out infinite alternate; /* Alterna la animación de ida y vuelta */
-         background-image: url('imagen/particles.gif'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
+         background-image: url('Imagen/particles.gif'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
 
 }
 .input-cell input {
@@ -338,7 +338,7 @@ button {
     cursor: pointer;
     text-transform: uppercase;
     position: relative; /* Para posicionar el texto y la imagen correctamente */
-     background-image: url('imagen/particles.gif'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
+     background-image: url('Imagen/particles.gif'), linear-gradient(200deg, rgba(92, 30, 166, 1) 0%, rgba(200, 67, 94, 1) 100%);
 }
 label img {
     width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
