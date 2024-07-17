@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de Bingo</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="logo-container">
@@ -27,8 +28,2574 @@
             <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
         <button id="button-generate" onclick="resetTable()">
             <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
     </div>
 
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Imagen/logo.png" alt="Logo de tu sitio web" class="logo">
+    </div>
+    <div class="container">
+        <h1>TuBingo</h1>
+        <label for="bingoCount">
+            <img src="Imagen/bingo.png" alt="Icono">TABLAS:</label>
+        <input type="number" id="bingoCount" value="1" min="1" max="10">
+        <button id="button-generate" onclick="generateBingoCards()">  
+            <img src="Imagen/boton.png" alt="Icono">Generar</button>
+        <div id="bingoCardsContainer" class="bingo-cards-container"></div>
+        <div id="inputSection" style="display: none;">
+            <h2>AÑADIR</h2>
+            <button id="button-generate" onclick="saveNumbers()">GUARDAR</button>
+        </div>
+        <input type="number" id="numberInput" placeholder="Número para marcar">
+        <button id="button-generate" onclick="markNumber()">
+            <img src="Imagen/x2.png" alt="Icono">MARCAR</button>
+        <button id="button-generate" onclick="resetTable()">
+            <img src="Imagen/rr.png" alt="Icono">NUEVO</button>
+
+        <!-- Sección de opciones -->
+        <div id="optionsSection" class="options-container">
+            <h2>Opciones de Verificación</h2>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkA" checked>
+                <label class="form-check-label" for="checkA">A</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkE" checked>
+                <label class="form-check-label" for="checkE">E</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkS" checked>
+                <label class="form-check-label" for="checkS">S</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkI" checked>
+                <label class="form-check-label" for="checkI">I</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkU" checked>
+                <label class="form-check-label" for="checkU">U</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkO" checked>
+                <label class="form-check-label" for="checkO">O</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkH" checked>
+                <label class="form-check-label" for="checkH">H</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkC" checked>
+                <label class="form-check-label" for="checkC">C</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkZ" checked>
+                <label class="form-check-label" for="checkZ">Z</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkW" checked>
+                <label class="form-check-label" for="checkW">W</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkD" checked>
+                <label class="form-check-label" for="checkD">D</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkG" checked>
+                <label class="form-check-label" for="checkG">G</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkF" checked>
+                <label class="form-check-label" for="checkF">F</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkN" checked>
+                <label class="form-check-label" for="checkN">N</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkP" checked>
+                <label class="form-check-label" for="checkP">P</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkL" checked>
+                <label class="form-check-label" for="checkL">L</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkR" checked>
+                <label class="form-check-label" for="checkR">R</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkLL" checked>
+                <label class="form-check-label" for="checkLL">LL</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkT" checked>
+                <label class="form-check-label" for="checkT">T</label>
+            </div>
+            <div class="form-check form-switch option-box">
+                <input class="form-check-input" type="checkbox" id="checkV" checked>
+                <label class="form-check-label" for="checkV">V</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de historial -->
+    <div id="historySection" class="card">
+        <div class="card-header">
+            <h2>Historial de Letras Completadas</h2>
+        </div>
+        <ul id="historyList" class="list-group list-group-flush"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
